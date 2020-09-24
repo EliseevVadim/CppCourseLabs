@@ -1,0 +1,4 @@
+﻿  Task1.cpp
+D:\tt\Lab1Cpp\Task1\Task1.cpp(7,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\tt\Lab1Cpp\Task1\Task1.cpp(23,15): warning C4018: '<': signed/unsigned mismatch
+  Task1.vcxproj -> D:\tt\Lab1Cpp\Debug\Task1.exe
