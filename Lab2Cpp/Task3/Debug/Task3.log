@@ -1,0 +1,5 @@
+﻿  Task3.cpp
+D:\tt\Lab2Cpp\Task3\Task3.cpp(4,1): warning C4005: 'RAND_MAX': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(344): message : see previous definition of 'RAND_MAX'
+D:\tt\Lab2Cpp\Task3\Task3.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Task3.vcxproj -> D:\tt\Lab2Cpp\Debug\Task3.exe

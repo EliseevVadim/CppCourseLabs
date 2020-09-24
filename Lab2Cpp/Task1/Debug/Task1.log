@@ -1,0 +1,5 @@
+﻿  Task1.cpp
+D:\tt\Lab2Cpp\Task1\Task1.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\tt\Lab2Cpp\Task1\Task1.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\tt\Lab2Cpp\Task1\Task1.cpp(21,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Task1.vcxproj -> D:\tt\Lab2Cpp\Debug\Task1.exe
