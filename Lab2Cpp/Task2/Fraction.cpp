@@ -29,30 +29,6 @@ void Fraction::printFraction() {
 		std::cout << 0 << std::endl;
 	}
 }
-Fraction Fraction::multiply(Fraction f1, Fraction f2) {
-	Fraction result;
-	result.nominator_ = f1.nominator_ * f2.nominator_;
-	result.denominator_ = f1.denominator_ * f2.denominator_;
-	return result;
-}
-Fraction Fraction::divide(Fraction f1, Fraction f2) {
-	Fraction result;
-	result.nominator_ = f1.nominator_ * f2.denominator_;
-	result.denominator_ = f1.denominator_ * f2.nominator_;
-	return result;
-}
-Fraction Fraction::summarize(Fraction f1, Fraction f2) {
-	Fraction result;
-	result.nominator_ = f1.nominator_ * f2.denominator_+f2.nominator_*f1.denominator_;
-	result.denominator_ = f1.denominator_ * f2.denominator_;
-	return result;
-}
-Fraction Fraction::subtract(Fraction f1, Fraction f2) {
-	Fraction result;
-	result.nominator_ = f1.nominator_ * f2.denominator_ - f2.nominator_ * f1.denominator_;
-	result.denominator_ = f1.denominator_ * f2.denominator_;
-	return result;
-}
 void Fraction::reduce() {
 	int gcd1 = gcd(nominator_, denominator_);
 	nominator_ /= gcd1;
@@ -117,7 +93,7 @@ void Fraction::printAsFraction(std::string decimal_fraction) {
 		f.printFraction();
 	}
 	else {
-		std::cout << nom;
+		std::cout << nom<<std::endl;
 	}
 }
 void Fraction::setNominator(int nominator) {
@@ -141,7 +117,7 @@ void Fraction::printAsFraction(double decimal_fraction) {
 		{
 			s1 += s[i];
 		}
-		if (s[i] == '.') {
+		if (s[i] == ',') {
 			flag = true;
 		}
 	}
@@ -166,6 +142,7 @@ void Fraction::printAsFraction(double decimal_fraction) {
 			zeros++;
 		}
 	}
+	
 	int denom = atoi(s2.c_str());
 	Fraction f;
 	if (denom != 0) {
@@ -181,7 +158,7 @@ void Fraction::printAsFraction(double decimal_fraction) {
 		f.printFraction();
 	}
 	else {
-		std::cout << nom;
+		std::cout << nom << std::endl;
 	}
 }
 int Fraction::gcd(int n, int m) {
