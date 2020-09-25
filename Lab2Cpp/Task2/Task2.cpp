@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <cstring>
 #include "Fraction.h"
@@ -16,19 +16,19 @@ int main()
 	setlocale(0, "Russian");
 	Fraction f(1, 2);
 	Fraction f1(1, 3);
-	Fraction res = res.summarize(f, f1);
+	Fraction res = f + f1;
 	res.reduce();
 	res.printFraction();
-	Fraction res1 = res.subtract(f, f1);
+	Fraction res1 = f - f1;
 	res1.reduce();
 	res1.printFraction();
-	Fraction res2 = res2.multiply(f, f1);
+	Fraction res2 = f * f1;
 	res2.reduce();
 	res2.printFraction();
-	Fraction res3 = res3.divide(f, f1);
+	Fraction res3 = f / f1;
 	res3.reduce();
 	res3.printFraction();
-	res3.printAsFraction(0.43);
 	res3.printAsFraction("0.25");
+	res3.printAsFraction(0.4);
 	std::cout << "Число всех созданных дробей: " << Fraction::counter;
 }
