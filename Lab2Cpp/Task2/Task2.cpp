@@ -13,7 +13,6 @@
 Продемонстрировать работу созданного класса. Создать несколько объектов дробей. Произвести операции сложения, вычитания, умножения и деления дробей. Вывести на экран результаты. Показать также результаты работы статических методов класса.*/
 int main()
 {
-	setlocale(0, "Russian");
 	Fraction f(1, 2);
 	Fraction f1(1, 3);
 	Fraction res = f + f1;
@@ -30,5 +29,5 @@ int main()
 	res3.printFraction();
 	res3.printAsFraction("0.25");
 	res3.printAsFraction(0.4);
-	std::cout << "Число всех созданных дробей: " << Fraction::counter;
+	std::cout << "The count of fracions is: " << Fraction::counter;
 }
