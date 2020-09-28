@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "Vector.h";
 #include <ctime>
 #include "Matrix.h";
@@ -9,13 +9,6 @@ using namespace std;
  Выделение и освобождение динамической памяти производить в конструкторах и деструкторах классов, соответственно.
  В классе Vector перегрузить оператор индексации []. В классе Matrix добавить методы T at(int i, int j) const и setAt(int i, int j, T val), которые позволяют получить и установить значение элемента массива с индексом [i][j], T – это тип элементов массива по варианту (int или double).
  Перегрузить операторы инкремента и декремента (как префиксного, так и постфиксного). Смысл инкремента / декремента всего массива заключается в инкременте / декременте каждого элемента массива.*/
-int factorial(int num) {
-	int fact = 1;
-	for (int i = 1; i <= num; i++) {
-		fact *= i;
-	}
-	return fact;
-}
 int main()
 {
 	srand(time(NULL));
@@ -24,14 +17,14 @@ int main()
 	cin >> length;
 	Vector array(length);
 	for (int i = 0; i < length; i++) {
-		array.setElementToIndex(rand() % 101, i);
+		array[i] = rand() % 101;
 	}
 	cout << "The source vector:\n";
 	array.printVector();
 	int index;
 	cout << "\nEnter the index for getting\n";
 	cin >> index;
-	int res = array.getElementFromIndex(index);
+	int res = array[index];
 	if (res != NULL) {
 		cout << "The founded element is: " << res << endl;
 	}
@@ -39,16 +32,16 @@ int main()
 	{
 		cout << "The founded element is nothing\n";
 	}
-	array.prefixIncrease();
-	cout << "Prefix increased vector:\n";
+	Vector bufPrefInc = ++array;
+	cout << "\nPrefix increased vector:\n";
 	array.printVector();
-	array.postfixIncrease();
-	cout << "\nPostfix increased vector:\n";
-	array.printVector();
-	array.postfixDecrease();
+	Vector buffPostInc = array++;
+	cout << "\nPostix increased vector:\n";
+	array.printVector();	
+	Vector buffPostDec = array--;
 	cout << "\nPostfix decreased vector:\n";
 	array.printVector();
-	array.prefixDecrease();
+	Vector buffPrefDec = --array;
 	cout << "\nPrefix decreased vector:\n";
 	array.printVector();
 	array.~Vector();
@@ -76,16 +69,16 @@ int main()
 	{
 		cout << "The founded element is nothing\n";
 	}
-	m.prefixIncrease();
+	Matrix buffPrefIncM = ++m;
 	cout << "Prefix increased matrix:\n";
 	m.printMatrix();
-	m.postfixIncrease();
+	Matrix buffPostIncM = m++;
 	cout << "\nPostfix increased matrix:\n";
 	m.printMatrix();
-	m.postfixDecrease();
+	Matrix buffPostDecM = m--;
 	cout << "\nPostfix decreased matrix:\n";
 	m.printMatrix();
-	m.prefixDecrease();
+	Matrix buffPrefDecM = m--;
 	cout << "\nPrefix decreased matrix:\n";
 	m.printMatrix();
 	m.~Matrix();
@@ -93,10 +86,10 @@ int main()
 	const int Nrows = 5;
 	const int Ncols = 5;
 	const int Nlength = 10;
-	Matrix matrix(Nrows, Ncols);
-	for (int i = 0; i < Nrows; i++) {
-		for (int j = 0; j < Ncols; j++) {
-			matrix.setAt(i, j, factorial(i) + factorial(j));
+	Matrix matrix(5, 5);
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			matrix.setAt(i, j, matrix.factorial(i) + matrix.factorial(j));
 		}
 	}
 	cout << "Source matrix: " << endl;
@@ -106,7 +99,7 @@ int main()
 	for (int i = 1; i < Nrows; i++) {
 		for (int j = 0; j < Ncols; j++) {
 			if (i % 2 != 0) {
-				vector.setElementToIndex(matrix.at(i, j), pos);
+				vector[pos]=matrix.at(i, j);
 				pos++;
 			}
 		}
