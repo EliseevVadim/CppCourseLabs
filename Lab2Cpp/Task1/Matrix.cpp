@@ -1,6 +1,13 @@
 #include "Matrix.h"
 #include <iostream>
 using namespace std;
+int Matrix::factorial(int num) {
+	int fact = 1;
+	for (int i = 1; i <= num; i++) {
+		fact *= i;
+	}
+	return fact;
+}
 Matrix::Matrix(int rows, int cols) {
 	mas = new int* [rows];
 	for (size_t i = 0; i < rows; i++) {
@@ -12,6 +19,7 @@ Matrix::Matrix(int rows, int cols) {
 void Matrix::printMatrix() {
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
+			cout.width(8);
 			cout << mas[i][j] << " ";
 		}
 		cout << endl;
@@ -38,31 +46,41 @@ Matrix::~Matrix() {
 	mas = nullptr;
 	cout << "\nThe matrix was deleted\n";
 }
-void Matrix::postfixIncrease() {
-	for (int i = 0; i < rows_; i++) {
-		for (int j = 0; j < cols_; j++) {
-			mas[i][j]++;
-		}
-	}
-}
-void Matrix::prefixIncrease() {
+// префиксный инкремент
+Matrix Matrix::operator++() {
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
 			++mas[i][j];
 		}
 	}
+	return *this;
 }
-void Matrix::postfixDecrease() {
+// постфиксный инкремент
+Matrix Matrix::operator++(int) {
+	Matrix& m = *this;
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
-			mas[i][j]--;
+			mas[i][j]++;
 		}
 	}
+	return m;
 }
-void Matrix::prefixDecrease() {
+//префиксный декремент
+Matrix Matrix::operator--() {
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
 			--mas[i][j];
 		}
 	}
+	return *this;
+}
+// постфиксный декремент
+Matrix Matrix::operator--(int) {
+	Matrix& m = *this;
+	for (int i = 0; i < rows_; i++) {
+		for (int j = 0; j < cols_; j++) {
+			mas[i][j]--;
+		}
+	}
+	return m;
 }
