@@ -15,6 +15,11 @@ Matrix::Matrix(int rows, int cols) {
 	}
 	rows_ = rows;
 	cols_ = cols;
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			*(*(mas + i) + j) = rand()%100;
+		}
+	}
 }
 void Matrix::printMatrix() {
 	for (int i = 0; i < rows_; i++) {
@@ -47,7 +52,7 @@ Matrix::~Matrix() {
 	cout << "\nThe matrix was deleted\n";
 }
 // префиксный инкремент
-Matrix Matrix::operator++() {
+Matrix& Matrix::operator++() {
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
 			++mas[i][j];
@@ -56,7 +61,7 @@ Matrix Matrix::operator++() {
 	return *this;
 }
 // постфиксный инкремент
-Matrix Matrix::operator++(int) {
+Matrix& Matrix::operator++(int) {
 	Matrix& m = *this;
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
@@ -66,7 +71,7 @@ Matrix Matrix::operator++(int) {
 	return m;
 }
 //префиксный декремент
-Matrix Matrix::operator--() {
+Matrix& Matrix::operator--() {
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
 			--mas[i][j];
@@ -75,7 +80,7 @@ Matrix Matrix::operator--() {
 	return *this;
 }
 // постфиксный декремент
-Matrix Matrix::operator--(int) {
+Matrix& Matrix::operator--(int) {
 	Matrix& m = *this;
 	for (int i = 0; i < rows_; i++) {
 		for (int j = 0; j < cols_; j++) {
