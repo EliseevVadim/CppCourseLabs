@@ -38,11 +38,11 @@ void Stadium::setSectorsNumber(short sectors_num) {
 	sectors_num_ = sectors_num;
 }
 void Stadium::printInfo() {
-	std::cout << "Àäðåñ ñòàäèîíà: " << location_<<std::endl;
-	std::cout << "Âëàäåþùèé êëóá: " << club_<<std::endl;
-	std::cout << "×èñëî ñåêòîðîâ: " << sectors_num_ << std::endl;
-	std::cout << "Âìåñòèìîñòü: " << complexity_ << std::endl;
-	std::cout << "Ñðåäíèé ïðîöåíò ïîñåùàåìîñòè: " << average << std::endl;
+	std::cout << "ÐÐ´Ñ€ÐµÑ ÑÑ‚Ð°Ð´Ð¸Ð¾Ð½Ð°: " << location_<<std::endl;
+	std::cout << "Ð’Ð»Ð°Ð´ÐµÑŽÑ‰Ð¸Ð¹ ÐºÐ»ÑƒÐ±: " << club_<<std::endl;
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ ÑÐµÐºÑ‚Ð¾Ñ€Ð¾Ð²: " << sectors_num_ << std::endl;
+	std::cout << "Ð’Ð¼ÐµÑÑ‚Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: " << complexity_ << std::endl;
+	std::cout << "Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð¿Ñ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð¿Ð¾ÑÐµÑ‰Ð°ÐµÐ¼Ð¾ÑÑ‚Ð¸: " << average << std::endl;
 	std::cout << "-------------------------------------------------------"<<std::endl;
 }
 void::Stadium::setAttendance(int attendance) {
