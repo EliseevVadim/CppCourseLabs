@@ -8,10 +8,10 @@ public:
 	void setAt(int i, int j, int val);
 	void printMatrix();
 	int factorial(int num);
-	Matrix operator++();
-	Matrix operator--();
-	Matrix operator++(int);
-	Matrix operator--(int);
+	Matrix& operator++();
+	Matrix& operator--();
+	Matrix& operator++(int);
+	Matrix& operator--(int);
 private:
 	int** mas;
 	int rows_;
