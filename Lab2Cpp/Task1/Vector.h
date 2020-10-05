@@ -1,16 +1,16 @@
 #pragma once
+#include "Matrix.h"
 class Vector
 {
 public:
 	Vector(int length);
 	~Vector();
+	void getVectorFromMatrix(Matrix m);
 	void printVector();
-	void prefixDecrease();
-	void postfixDecrease();
-	Vector operator++();
-	Vector operator--();
-	Vector operator++(int);
-	Vector operator--(int);
+	Vector& operator++();
+	Vector& operator--();
+	Vector& operator++(int);
+	Vector& operator--(int);
 	int& operator[](int pos);
 private:
 	int length_;
