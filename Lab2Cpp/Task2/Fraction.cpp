@@ -117,7 +117,7 @@ void Fraction::printAsFraction(double decimal_fraction) {
 		{
 			s1 += s[i];
 		}
-		if (s[i] == ',') {
+		if (s[i] == '.') {
 			flag = true;
 		}
 	}
@@ -160,6 +160,26 @@ void Fraction::printAsFraction(double decimal_fraction) {
 	else {
 		std::cout << nom << std::endl;
 	}
+}
+Fraction Fraction::operator+ (Fraction f) {
+	Fraction res(this->nominator_ * f.denominator_ + f.nominator_ * this->denominator_, this->denominator_ * f.denominator_);
+	res.reduce();
+	return res;
+}
+Fraction Fraction::operator-(Fraction f) {
+	Fraction res(this->nominator_ * f.denominator_ - f.nominator_ * this->denominator_, this->denominator_ * f.denominator_);
+	res.reduce();
+	return res;
+}
+Fraction Fraction::operator* (Fraction f) {
+	Fraction res(this->nominator_ * f.nominator_, this->denominator_ * f.denominator_);
+	res.reduce();
+	return res;
+}
+Fraction Fraction::operator/ (Fraction f) {
+	Fraction res(this->nominator_ * f.denominator_, this->denominator_ * f.nominator_);
+	res.reduce();
+	return res;
 }
 int Fraction::gcd(int n, int m) {
 	int gcd = 1;
