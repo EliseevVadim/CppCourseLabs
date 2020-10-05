@@ -15,10 +15,7 @@ int main()
 	int length;
 	cout << "Enter the length of vector\n";
 	cin >> length;
-	Vector array(length);
-	for (int i = 0; i < length; i++) {
-		array[i] = rand() % 101;
-	}
+	Vector array(length);	
 	cout << "The source vector:\n";
 	array.printVector();
 	int index;
@@ -32,30 +29,24 @@ int main()
 	{
 		cout << "The founded element is nothing\n";
 	}
-	Vector bufPrefInc = ++array;
+	++array;
 	cout << "\nPrefix increased vector:\n";
 	array.printVector();
-	Vector buffPostInc = array++;
+	array++;
 	cout << "\nPostix increased vector:\n";
 	array.printVector();	
-	Vector buffPostDec = array--;
+	array--;
 	cout << "\nPostfix decreased vector:\n";
 	array.printVector();
-	Vector buffPrefDec = --array;
+	--array;
 	cout << "\nPrefix decreased vector:\n";
 	array.printVector();
-	array.~Vector();
 	int rows, cols;
 	cout << "\nEnter the number of rows in the matrix:\n";
 	cin >> rows;
 	cout << "\nEnter the number of coloumns in the matrix:\n";
 	cin >> cols;
 	Matrix m(rows, cols);
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0; j < cols; j++) {
-			m.setAt(i, j, rand() % 100);
-		}
-	}
 	cout << "\nThe source matrix:\n";
 	m.printMatrix();
 	int i, j;
@@ -69,19 +60,18 @@ int main()
 	{
 		cout << "The founded element is nothing\n";
 	}
-	Matrix buffPrefIncM = ++m;
+	++m;
 	cout << "Prefix increased matrix:\n";
 	m.printMatrix();
-	Matrix buffPostIncM = m++;
+	m++;
 	cout << "\nPostfix increased matrix:\n";
 	m.printMatrix();
-	Matrix buffPostDecM = m--;
+	m--;
 	cout << "\nPostfix decreased matrix:\n";
 	m.printMatrix();
-	Matrix buffPrefDecM = m--;
+	--m;
 	cout << "\nPrefix decreased matrix:\n";
 	m.printMatrix();
-	m.~Matrix();
 	cout << "\nTask from the first lab (variant 7)\n";
 	const int Nrows = 5;
 	const int Ncols = 5;
@@ -94,16 +84,8 @@ int main()
 	}
 	cout << "Source matrix: " << endl;
 	matrix.printMatrix();
-	Vector vector(Nlength);
-	int pos = 0;
-	for (int i = 1; i < Nrows; i++) {
-		for (int j = 0; j < Ncols; j++) {
-			if (i % 2 != 0) {
-				vector[pos]=matrix.at(i, j);
-				pos++;
-			}
-		}
-	}
+	Vector v(Nlength);
+	v.getVectorFromMatrix(matrix);
 	cout << "Result array: " << endl;
-	vector.printVector();	
+	v.printVector();
 }
