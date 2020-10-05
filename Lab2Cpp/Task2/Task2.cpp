@@ -28,6 +28,6 @@ int main()
 	res3.reduce();
 	res3.printFraction();
 	res3.printAsFraction("0.25");
-	res3.printAsFraction(0.4);
+	res3.printAsFraction(0.43);
 	std::cout << "The count of fracions is: " << Fraction::counter;
 }
