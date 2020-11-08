@@ -1,0 +1,5 @@
+﻿  CustomExpressionEvaluator.cpp
+D:\tt\Lab3Cpp\Task1\CustomExpressionEvaluator.h(4,40): warning C4584: 'CustomExpressionEvaluator': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\tt\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\tt\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+  Task1.vcxproj -> D:\tt\Lab3Cpp\Debug\Task1.exe

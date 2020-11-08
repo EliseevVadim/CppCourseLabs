@@ -1,0 +1,8 @@
+﻿  Task2.cpp
+D:\tt\Lab3Cpp\Task2\Conditioner.h(3,27): warning C4584: 'Conditioner': base-class 'IControllable' is already a base-class of 'HomeAppliance'
+D:\tt\Lab3Cpp\Task2\IControllable.h(2): message : see declaration of 'IControllable'
+D:\tt\Lab3Cpp\Task2\HomeAppliance.h(5): message : see declaration of 'HomeAppliance'
+D:\tt\Lab3Cpp\Task2\Reflector.h(3,25): warning C4584: 'Reflector': base-class 'IControllable' is already a base-class of 'HomeAppliance'
+D:\tt\Lab3Cpp\Task2\IControllable.h(2): message : see declaration of 'IControllable'
+D:\tt\Lab3Cpp\Task2\HomeAppliance.h(5): message : see declaration of 'HomeAppliance'
+  Task2.vcxproj -> D:\tt\Lab3Cpp\x64\Debug\Task2.exe
