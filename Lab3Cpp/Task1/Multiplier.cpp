@@ -15,9 +15,6 @@ Multiplier::Multiplier(size_t n) {
 	}
 	length = n;
 }
-Multiplier::~Multiplier() {
-	delete[] mas;
-}
 double Multiplier::calculate() const {
 	double res = 1;
 	for (size_t i = 0; i < length; i++) {

@@ -16,9 +16,6 @@ CustomExpressionEvaluator::CustomExpressionEvaluator(size_t n) {
 	}
 	length = n;
 }
-CustomExpressionEvaluator::~CustomExpressionEvaluator() {
-	delete[] mas;
-}
 double CustomExpressionEvaluator::calculate() const {	
 	if (length % 2 != 0) {
 		double res = mas[0];

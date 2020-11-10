@@ -15,9 +15,6 @@ Divisor::Divisor(size_t n) {
 	}
 	length = n;
 }
-Divisor::~Divisor() {
-	delete[] mas;
-}
 double Divisor::calculate() const {
 	double res = mas[0];
 	for (size_t i = 1; i < length; i++) {

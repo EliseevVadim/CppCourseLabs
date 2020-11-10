@@ -13,6 +13,7 @@ ExpressionEvaluator::ExpressionEvaluator(size_t n) {
 		mas[i] = 0;
 	}
 	length = n;
+	std::cout << "done\n";
 }
 void ExpressionEvaluator::setOperand(size_t pos, double value) {
 	mas[pos] = value;
@@ -30,5 +31,6 @@ void ExpressionEvaluator::logToFile(const std::string& filename) const {
 
 }
 ExpressionEvaluator::~ExpressionEvaluator() {
+	if(mas!=NULL)
 	delete[] mas;
 }

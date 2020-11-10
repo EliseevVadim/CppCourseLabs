@@ -1,11 +1,40 @@
-﻿  Task1.cpp
-D:\tt\Lab3Cpp\Task1\CustomExpressionEvaluator.h(5,40): warning C4584: 'CustomExpressionEvaluator': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
-D:\tt\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
-D:\tt\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
-D:\tt\Lab3Cpp\Task1\Multiplier.h(4,26): warning C4584: 'Multiplier': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
-D:\tt\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
-D:\tt\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
-D:\tt\Lab3Cpp\Task1\Divisor.h(4,22): warning C4584: 'Divisor': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
-D:\tt\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
-D:\tt\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
-  Task1.vcxproj -> D:\tt\Lab3Cpp\x64\Debug\Task1.exe
+﻿  CustomExpressionEvaluator.cpp
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.h(5,40): warning C4584: 'CustomExpressionEvaluator': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(50,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(76,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(104,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(130,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(165,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(191,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(219,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.cpp(245,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Divisor.cpp
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.h(4,22): warning C4584: 'Divisor': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.cpp(30,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.cpp(55,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.cpp(86,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.cpp(111,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Multiplier.cpp
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.h(4,26): warning C4584: 'Multiplier': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.cpp(30,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.cpp(55,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.cpp(86,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.cpp(111,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Task1.cpp
+D:\CppCourseLabs\Lab3Cpp\Task1\CustomExpressionEvaluator.h(5,40): warning C4584: 'CustomExpressionEvaluator': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\Multiplier.h(4,26): warning C4584: 'Multiplier': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\Divisor.h(4,22): warning C4584: 'Divisor': base-class 'ILoggable' is already a base-class of 'ExpressionEvaluator'
+D:\CppCourseLabs\Lab3Cpp\Task1\ILoggable.h(4): message : see declaration of 'ILoggable'
+D:\CppCourseLabs\Lab3Cpp\Task1\ExpressionEvaluator.h(4): message : see declaration of 'ExpressionEvaluator'
+  Generating Code...
+  Task1.vcxproj -> D:\CppCourseLabs\Lab3Cpp\x64\Debug\Task1.exe
