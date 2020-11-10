@@ -24,12 +24,6 @@ void ExpressionEvaluator::setOperands(double ops[], size_t n) {
 	}
 
 }
-void ExpressionEvaluator::logToScreen() const{
-	std::cout << "log";
-}
-void ExpressionEvaluator::logToFile(const std::string& filename) const {
-
-}
 ExpressionEvaluator::~ExpressionEvaluator() {
 	if(mas!=NULL)
 	delete[] mas;
