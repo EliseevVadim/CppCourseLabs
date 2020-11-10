@@ -23,9 +23,6 @@ void ExpressionEvaluator::setOperands(double ops[], size_t n) {
 	}
 
 }
-double ExpressionEvaluator::calculate() const {
-	return 0;
-}
 void ExpressionEvaluator::logToScreen() const{
 	std::cout << "log";
 }
