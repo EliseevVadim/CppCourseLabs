@@ -1,0 +1,13 @@
+﻿  AdaptedDeck.cpp
+  Dealer.cpp
+  Deck.cpp
+D:\CppCourseLabs\Lab4Cpp\Task1\Deck.cpp(4,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\CppCourseLabs\Lab4Cpp\Task1\Deck.cpp(60,20): warning C4018: '<': signed/unsigned mismatch
+D:\CppCourseLabs\Lab4Cpp\Task1\Deck.cpp(69,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Game.cpp
+D:\CppCourseLabs\Lab4Cpp\Task1\Game.cpp(27,16): warning C4154: deletion of an array expression; conversion to pointer supplied
+D:\CppCourseLabs\Lab4Cpp\Task1\Game.cpp(30,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Player.cpp
+  Task1.cpp
+  Generating Code...
+  Task1.vcxproj -> D:\CppCourseLabs\Lab4Cpp\Debug\Task1.exe
