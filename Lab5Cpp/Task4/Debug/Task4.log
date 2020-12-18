@@ -1,0 +1,14 @@
+﻿  Task4.cpp
+D:\CppCourseLabs\Lab5Cpp\Task4\Book.h(18,21): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include\functional(426,1): error C2440: 'initializing': cannot convert from 'const _Ty' to 'Book *'
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.24.28314\include\functional(426,44): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+D:\CppCourseLabs\Lab5Cpp\Task4\Task4.cpp(20): message : see reference to function template instantiation 'std::binder2nd<std::greater<Book *>> std::bind2nd<std::greater<Book *>,int>(const _Fn &,const _Ty &)' being compiled
+          with
+          [
+              _Fn=std::greater<Book *>,
+              _Ty=int
+          ]
